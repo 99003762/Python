@@ -11,7 +11,6 @@ class person:
             line = 0
             str1 = 0
             word = str(input("Enter word {} :".format(i+1)))
-            #pattern = re.compile(word, re.I)
             with open("{}.txt".format(word), 'w') as file_answer:
                 with open('Input_file.txt', 'rt') as file_info:
                     for file_line in file_info:
@@ -31,7 +30,6 @@ class person:
                                     file_answer.writelines(str(count+1)+' :')
                                     file_answer.write(l[j]+'\n')
                                     count += 1
-            #print("total index", c)
             print("total line count", count)
             f = open("{}.txt".format(word), 'a')
             f.write("Total number of occurence:"+str(count))
