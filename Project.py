@@ -20,7 +20,7 @@ class Find:
                             if word.lower() == k[j].lower():
                                 n = line
                                 t = " -----(is found at): "
-                                if j > 0 and j < (len(k)-1):
+                                if 0 < j < (len(k)-1):
                                     count += 1
                                     y = k[j-1] + " " + k[j] + " " + k[j+1]
                                     str1 = ('\n' + y)
