@@ -18,13 +18,15 @@ class Find:
                         k = file_line.split()
                         for j in range(len(k)):
                             if word.lower() == k[j].lower():
-                                n= line
+                                n = line
+                                t = " -----(is found at): "
                                 if j > 0 and j < (len(k)-1):
                                     count += 1
-                                    str1 = ('\n'+k[j-1]+" "+k[j]+" "+k[j+1])
-                                    file_answer.write((str1+" --------(IS FOUND AT): "+str(n)))
+                                    y = k[j-1] + " " + k[j] + " " + k[j+1]
+                                    str1 = ('\n' + y)
+                                    file_answer.write((str1 + t + str(n)))
                                 else:
-                                    file_answer.write('\n'+k[j]+" --------(IS FOUND AT): "+ str(n))
+                                    file_answer.write('\n' + k[j] + t + str(n))
                                     count += 1
             print("total line count", count)
             f = open("{}.txt".format(word), 'a')
