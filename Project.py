@@ -22,10 +22,8 @@ class Find:
                                 if j > 0 and j < (len(k)-1):
                                     count += 1
                                     str1 = ('\n'+k[j-1]+" "+k[j]+" "+k[j+1])
-                                    #file_answer.writelines(str(count)+' :')
                                     file_answer.write((str1+" --------(IS FOUND AT): "+str(n)))
                                 else:
-                                    #file_answer.writelines(str(count+1)+' :')
                                     file_answer.write('\n'+k[j]+" --------(IS FOUND AT): "+ str(n))
                                     count += 1
             print("total line count", count)
