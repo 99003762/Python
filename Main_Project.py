@@ -7,7 +7,7 @@ class Find:
     def __init__(self, itr):
         self.itr = itr
 
-# function to search the given word in given input_text file
+# function to search the given word in given input_file
     def my_function(self):
         for i in range(self.itr):
             count = 0
